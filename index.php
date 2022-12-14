@@ -11,5 +11,4 @@ imagepalettetotruecolor($image);
 imagealphablending($image, true);
 imagesavealpha($image, true);
 imagewebp($image, $afterImageCompression, 80);
-
 imagedestroy($image);
