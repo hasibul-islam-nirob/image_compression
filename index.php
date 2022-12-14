@@ -1,15 +1,15 @@
 <?php
 
 
-$beforeImageCompression = 'img/burger.jpg';
-$afterImageCompression = 'webp/burger.webp';
+$beforeImageCompression = 'img/v-tree.png';
+$afterImageCompression = 'webp/v-tree80.webp';
 
 
-
-$image = imagecreatefromjpeg($beforeImageCompression);
+//$image = imagecreatefromjpeg($beforeImageCompression);
+$image = imagecreatefrompng($beforeImageCompression);
 imagepalettetotruecolor($image);
 imagealphablending($image, true);
 imagesavealpha($image, true);
-imagewebp($image, $afterImageCompression, 50);
+imagewebp($image, $afterImageCompression, 80);
 
 imagedestroy($image);
